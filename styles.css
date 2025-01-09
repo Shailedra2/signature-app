@@ -1,0 +1,55 @@
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.canvas {
+    border: 2px solid black;
+    cursor: crosshair;
+}
+
+.top, .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0 20px 0;
+}
+
+.black, input, select, button {
+    width: 80%;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top > .black {
+    margin: 10px;
+}
+
+.bottom > button {
+    margin: 10px;
+}
+
+.black > p {
+    margin: 10px auto;
+    width: 50%;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.canvas.dark-mode {
+    background-color: #444;
+    border: 2px solid #fff;
+}
+
+.button-dark {
+    background-color: #333;
+    color: white;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking the CSS file -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="main">
+        <div class="top">
+            <div class="black">
+                <p>Text color picker</p>
+                <input type="color" class="form-control" id="colorpicker" />
+            </div>
+            <div class="black">
+                <p>Background</p>
+                <input type="color" class="form-control" id="canvaColor" />
+            </div>
+            <div class="black">
+                <p>Font Size</p>
+                <select id="fontpicker">
+                    <option value="5">5px</option>
+                    <option value="10">10px</option>
+                    <option value="20">20px</option>
+                    <option value="30">30px</option>
+                    <option value="40">40px</option>
+                    <option value="50">50px</option>
+                </select>
+            </div>
+            <div class="black">
+                <p>Mode</p>
+                <select id="modeSelector">
+                    <option value="draw">Draw</option>
+                    <option value="erase">Erase</option>
+                </select>
+            </div>
+            <div class="black">
+                <p>Toggle Dark/Light Mode</p>
+                <button id="modeToggle" class="btn btn-dark">Dark Mode</button>
+            </div>
+        </div>
+        <canvas class="canvas" id="mycanvas" width="800" height="500"></canvas>
+        <div class="bottom">
+            <button type="button" class="btn btn-danger" id="clearbutton">Clear</button>
+            <button type="button" class="btn btn-success" id="savebutton">Save & Download</button>
+            <button type="button" class="btn btn-warning" id="retrivebutton">Retrieve Saved Signature</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Linking the JS file -->
+</body>
+</html>
